@@ -1,0 +1,38 @@
+.footer {
+  background-color: $color-black;
+
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    display: block;
+
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+}
+
+.row {
+  &--2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
