@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Netflix - Watch TV Shows Online, Watch Movies Online | CSS Flex</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles/css/styles.min.css/') }}">
   </head>
 
   <body>
     <header class="header">
       <nav class="nav">
-        <img src="../assets/netflix-logo.png" alt="netflix logo" class="nav__logo">
+        <img src="{{ url_for('static', path='images/netflix-logo.png') }}" alt="netflix logo" class="nav__logo">
         <button class="btn nav__btn">Sign In</button>
       </nav>
 
@@ -47,7 +47,7 @@
             Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
           </p>
         </div>
-        <img src="../assets/image 1.png" alt="netflix image 1" class="info__image">
+        <img src="{{ url_for('static', path='images/image 1.png') }}" alt="netflix image 1" class="info__image">
       </section>
     </div>
     <div class="divider"></div>
@@ -55,7 +55,7 @@
     <!-- section 2 -->
     <div class="container container-1">
       <section class="info">
-        <img src="../assets/image 2.png" alt="netflix image 2" class="info__image">
+        <img src="{{ url_for('static', path='images/image 2.png') }}" alt="netflix image 2" class="info__image">
         <div class="info__text-box">
           <h2 class="info__heading heading-1">Download your shows to watch offline.</h2>
           <p class="info__paragraph">
@@ -82,7 +82,7 @@
     <!-- section 4 -->
     <div class="container container-1">
       <section class="info">
-        <img src="../assets/image 4.png" alt="netflix image 4" class="info__image">
+        <img src="{{ url_for('static', path='images/image 4.png') }}" alt="netflix image 4" class="info__image">
         <div class="info__text-box">
           <h2 class="info__heading heading-1">Create profiles for kids.</h2>
           <p class="info__paragraph">
